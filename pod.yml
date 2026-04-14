@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: omnifood-pod
+  namespace: omnifood
+spec:
+  containers:
+    - name: omnifood
+      image: atultele/omnifood:latest
+      ports:
+        - containerPort: 80
